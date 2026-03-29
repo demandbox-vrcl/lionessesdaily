@@ -1,9 +1,103 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+:root {
+  /* Core backgrounds */
+  --color-bg:          #0C0A08;
+  --color-bg-warm:     #131008;
+  --color-surface:     #1A1612;
+  --color-surface-2:   #221E19;
+
+  /* Brand accents */
+  --color-gold:        #C9943A;
+  --color-gold-light:  #E0AF5C;
+  --color-gold-dim:    #8A6520;
+  --color-crimson:     #7A2828;
+  --color-crimson-bright: #9B3535;
+
+  /* Text hierarchy */
+  --color-cream:       #F2EAD8;
+  --color-cream-dim:   #C4B99A;
+  --color-muted:       #7A7065;
+  --color-muted-light: #9A8F84;
+
+  /* Borders and dividers */
+  --color-border:      #2A2420;
+  --color-border-gold: #C9943A40;
+  --color-border-warm: #3A3028;
+
+  /* Score colors */
+  --color-score-high:  #4A9B6F;
+  --color-score-mid:   #C9943A;
+  --color-score-low:   #9B5535;
+}
 
 body {
-  background-color: #0F0D0B;
-  color: #F5EFE6;
+  background-color: var(--color-bg);
+  color: var(--color-cream);
   font-family: var(--font-instrument), sans-serif;
+}
+
+/* ─── Type Scale ─── */
+
+.t-hero {
+  font-family: var(--font-cormorant);
+  font-size: clamp(72px, 10vw, 140px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+.t-display {
+  font-family: var(--font-cormorant);
+  font-size: clamp(48px, 6vw, 88px);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+}
+
+.t-headline {
+  font-family: var(--font-cormorant);
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.t-subhead {
+  font-family: var(--font-instrument);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-cream-dim);
+}
+
+.t-label {
+  font-family: var(--font-instrument);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.t-body {
+  font-family: var(--font-instrument);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--color-cream-dim);
+}
+
+.t-caption {
+  font-family: var(--font-instrument);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.t-score {
+  font-family: var(--font-cormorant);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-gold);
 }

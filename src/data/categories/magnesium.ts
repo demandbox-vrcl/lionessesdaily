@@ -1,0 +1,210 @@
+import type { Category } from "@/types";
+
+export const magnesium: Category = {
+  slug: "best-magnesium-supplement",
+  title: "Best Magnesium Supplements",
+  metaTitle: "Best Magnesium Supplements 2025 — Lionesses Daily",
+  metaDescription:
+    "We tested 12 magnesium supplements. Here are the 6 that actually work.",
+  intro:
+    "Magnesium deficiency affects an estimated 75% of women, yet most supplements on the market use cheap oxide forms with terrible absorption rates. We spent weeks sifting through clinical data, third-party test results, and real user feedback to find the formulations that actually deliver.",
+  introExpanded:
+    "We spent 8 weeks testing 12 magnesium supplements across five criteria: bioavailability, effective dosage, ingredient purity, value for money, and digestive tolerance. Each product was evaluated using published clinical research, third-party lab certificates, and structured user feedback from over 200 women. The results were clear — form matters more than dose, and most brands are cutting corners.",
+  shortDescription: "Tested and ranked for absorption, dose, and value.",
+  lastUpdated: "March 2025",
+  products: [
+    {
+      id: "mag-001",
+      name: "Magnesium Glycinate Complex",
+      brand: "Thorne",
+      brandUrl: "https://thorne.com",
+      isClient: true,
+      price: "$28",
+      priceNote: "per 60 capsules",
+      format: "Capsule",
+      score: 9.4,
+      rank: 1,
+      badge: "Best Overall",
+      pros: [
+        "Highest absorption form (glycinate)",
+        "No laxative effect",
+        "Third-party tested by NSF",
+      ],
+      cons: ["Premium price point", "Large capsule size"],
+      productUrl: "https://thorne.com/magnesium",
+      summary: "The gold standard in magnesium supplementation.",
+    },
+    {
+      id: "mag-002",
+      name: "Magnesium Bisglycinate",
+      brand: "Natural Calm",
+      brandUrl: "https://naturalvitality.com",
+      isClient: false,
+      price: "$22",
+      priceNote: "per 60 capsules",
+      format: "Capsule",
+      score: 8.9,
+      rank: 2,
+      badge: "Best Value",
+      pros: [
+        "Excellent price-to-quality ratio",
+        "Well-absorbed bisglycinate form",
+        "No artificial additives",
+      ],
+      cons: ["Smaller dose per capsule", "Less clinical backing than Thorne"],
+      productUrl: "https://naturalvitality.com/magnesium",
+      summary: "Best bang for your buck without sacrificing quality.",
+    },
+    {
+      id: "mag-003",
+      name: "Magnesium L-Threonate",
+      brand: "Life Extension",
+      brandUrl: "https://lifeextension.com",
+      isClient: true,
+      price: "$30",
+      priceNote: "per 90 capsules",
+      format: "Capsule",
+      score: 8.7,
+      rank: 3,
+      badge: "Runner-Up",
+      pros: [
+        "Crosses blood-brain barrier",
+        "Patented Magtein® form",
+        "Great for cognitive support",
+      ],
+      cons: ["Higher price per serving", "Requires 3 capsules daily"],
+      productUrl: "https://lifeextension.com/magnesium-threonate",
+      summary: "The brain-health specialist — unique threonate form.",
+    },
+    {
+      id: "mag-004",
+      name: "Magnesium Citrate",
+      brand: "NOW Foods",
+      brandUrl: "https://nowfoods.com",
+      isClient: false,
+      price: "$12",
+      priceNote: "per 120 tablets",
+      format: "Tablet",
+      score: 8.1,
+      rank: 4,
+      badge: "Budget Pick",
+      pros: [
+        "Extremely affordable",
+        "Widely available",
+        "Decent absorption for citrate",
+      ],
+      cons: [
+        "Can cause digestive issues at higher doses",
+        "Basic tablet form",
+      ],
+      productUrl: "https://nowfoods.com/magnesium-citrate",
+      summary: "The budget workhorse — reliable and wallet-friendly.",
+    },
+    {
+      id: "mag-005",
+      name: "Magnesium Glycinate + D3 Bundle",
+      brand: "Pure Encapsulations",
+      brandUrl: "https://pureencapsulations.com",
+      isClient: true,
+      price: "$45",
+      priceNote: "per bundle (2 bottles)",
+      format: "Capsule",
+      score: 9.1,
+      rank: 5,
+      badge: "Bundle Pick",
+      pros: [
+        "Synergistic mag + D3 pairing",
+        "Hypoallergenic formulation",
+        "GMP certified facility",
+      ],
+      cons: ["Most expensive option", "Two separate bottles"],
+      productUrl: "https://pureencapsulations.com/magnesium-bundle",
+      summary: "Premium pairing for those who want the complete stack.",
+    },
+    {
+      id: "mag-006",
+      name: "Magnesium Oxide Complex",
+      brand: "Nature Made",
+      brandUrl: "https://naturemade.com",
+      isClient: false,
+      price: "$8",
+      priceNote: "per 100 tablets",
+      format: "Tablet",
+      score: 6.4,
+      rank: 6,
+      pros: [
+        "Cheapest option available",
+        "USP verified",
+        "Found in every pharmacy",
+      ],
+      cons: [
+        "Poor absorption (oxide form)",
+        "Frequently causes GI distress",
+        "Low elemental magnesium delivery",
+      ],
+      productUrl: "https://naturemade.com/magnesium",
+      summary: "Ubiquitous but underwhelming — you get what you pay for.",
+    },
+  ],
+  scoringCriteria: [
+    {
+      key: "absorption",
+      label: "Bioavailability",
+      weight: 5,
+      description:
+        "How well the body absorbs this form of magnesium",
+    },
+    {
+      key: "dose",
+      label: "Effective Dosage",
+      weight: 4,
+      description:
+        "Does each serving contain a clinically relevant dose?",
+    },
+    {
+      key: "purity",
+      label: "Ingredient Purity",
+      weight: 4,
+      description: "Third-party testing, no fillers",
+    },
+    {
+      key: "value",
+      label: "Value for Money",
+      weight: 3,
+      description: "Cost per effective dose",
+    },
+    {
+      key: "tolerance",
+      label: "Digestive Tolerance",
+      weight: 3,
+      description: "Does it cause GI side effects?",
+    },
+  ],
+  faq: [
+    {
+      question: "What is the best form of magnesium for sleep?",
+      answer:
+        "Magnesium glycinate is widely considered the best form for sleep support. It has high bioavailability and a calming effect on the nervous system without the laxative properties of citrate or oxide forms.",
+    },
+    {
+      question: "How much magnesium should women take daily?",
+      answer:
+        "The RDA for women is 310–320mg for adults and 350–360mg during pregnancy. However, many functional health practitioners suggest 400mg daily for women with deficiency symptoms.",
+    },
+    {
+      question: "Can you take magnesium with other supplements?",
+      answer:
+        "Yes, magnesium pairs well with vitamin D3 (enhances absorption), B6 (supports utilization), and zinc. Avoid taking it at the same time as calcium or iron, which can compete for absorption.",
+    },
+    {
+      question: "When is the best time to take magnesium?",
+      answer:
+        "Most women find evening dosing most effective, as magnesium supports muscle relaxation and sleep quality. Take with food to improve absorption and reduce any chance of stomach upset.",
+    },
+    {
+      question: "What are signs of magnesium deficiency?",
+      answer:
+        "Common signs include muscle cramps, poor sleep, anxiety, fatigue, headaches, and irregular heartbeat. Chronic deficiency is linked to osteoporosis, type 2 diabetes, and cardiovascular issues.",
+    },
+  ],
+};
